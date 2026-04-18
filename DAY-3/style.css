@@ -1,0 +1,198 @@
+/* P1 */
+.main-nav {
+  a {
+    color: #1d4ed8;
+  }
+
+  > ul > li {
+    background-color: #f1f5f9;
+  }
+}
+
+h2 + p {
+  color: #64748b;
+}
+
+h2 ~ p {
+  color: #0f172a;
+}
+
+/* h2 ~ p:not(h2 + p) {
+  color: #0f172a;
+} */
+
+.author {
+  a {
+    color: #f97316;
+  }
+}
+
+/* P2 */
+.post {
+  background-color: white;
+
+  h1,
+  h2,
+  h3 {
+    color: #0f172a;
+  }
+
+  &:hover {
+    background-color: #f8fafc;
+
+    h1,
+    h2,
+    h3 {
+      color: #2563eb;
+    }
+  }
+
+  &.featured {
+    background-color: #fefce8;
+  }
+}
+
+/* P3 */
+.post {
+  a {
+    &:link {
+      color: #2563eb;
+    }
+    &:visited {
+      color: #9333ea;
+    }
+    &:hover {
+      color: #1e40af;
+    }
+    &:active {
+      color: #1e3a8a;
+    }
+  }
+}
+
+.btn {
+  background-color: #2563eb;
+  color: white;
+
+  &:hover {
+    background-color: #3b82f6;
+  }
+  &:active {
+    background-color: #1d4ed8;
+  }
+  &:disabled {
+    background-color: #94a3b8;
+    color: #cbd5e1;
+  }
+}
+
+input:focus {
+  background-color: #eff6ff;
+}
+
+/* P4 */
+table {
+  tr {
+    &:nth-child(odd) {
+      background-color: #f8fafc;
+    }
+
+    &:nth-child(even) {
+      background-color: white;
+    }
+
+    &:first-child {
+      background-color: #0f172a;
+      color: white;
+    }
+
+    &:last-child {
+      background-color: #dbeafe;
+    }
+  }
+}
+
+.steps {
+  li {
+    &:first-child {
+      color: #16a34a;
+    }
+
+    &:last-child {
+      color: #dc2626;
+    }
+
+    &:nth-child(3) {
+      background-color: #fef3c7;
+    }
+  }
+}
+
+.sidebar {
+  .widget {
+    &:not(:last-child) {
+      background-color: white;
+    }
+  }
+}
+
+/* P5 */
+.post-content .lead::first-line {
+  color: #0f172a;
+}
+
+.post-content .lead::first-letter {
+  color: #2563eb;
+}
+
+.quote::before {
+  content: "“";
+  color: #cbd5e1;
+}
+.quote::after {
+  content: "“";
+  color: #cbd5e1;
+}
+
+.steps li::marker {
+  color: #2563eb;
+}
+
+::selection {
+  background: #bfdbfe;
+  color: #0f172a;
+}
+
+.badge::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #ef4444;
+  border-radius: 50%;
+}
+
+/* P6 */
+input:required {
+  background: #fffbeb;
+}
+
+a[href^="https://"] {
+  color: #2563eb;
+}
+
+a[href$=".pdf"] {
+  color: #ea580c;
+}
+
+[class*="btn"] {
+  background-color: #e2e8f0;
+}
+
+[lang^="vi"] {
+  color: #0f172a;
+}
+
+tr[data-priority="high"] {
+  background: #fee2e2;
+}
