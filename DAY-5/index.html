@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shapes created with Border</title>
+    <style>
+      * {
+        padding: 0;
+      }
+      .shape-container {
+        width: 200px;
+        display: inline-block;
+        margin: 20px;
+      }
+      /* Hình vuông */
+      .square {
+        width: 50px;
+        height: 50px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #e74c3c;
+        margin-left: 10%;
+        margin-right: auto;
+      }
+
+      /* Hình chữ nhật */
+      .rectangle {
+        width: 70px;
+        height: 30px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #3498db;
+        margin-left: 10%;
+        margin-right: auto;
+      }
+
+      /* Tam giác lên */
+      .triangle-up {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 30px 50px 30px;
+        border-color: transparent transparent #2ecc71 transparent;
+        margin-left: 10%;
+        margin-right: auto;
+      }
+
+      /* Tam giác xuống */
+      .triangle-down {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 50px 30px 0 30px;
+        border-color: #f1c40f transparent transparent transparent;
+        margin-left: 10%;
+        margin-right: auto;
+      }
+
+      /* Tam giác trái */
+      .triangle-left {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 50px 30px 0;
+        border-color: transparent #9b59b6 transparent transparent;
+        margin-left: 10%;
+        margin-right: auto;
+      }
+
+      /* Tam giác phải */
+      .triangle-right {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 0 30px 50px;
+        border-color: transparent transparent transparent #e67e22;
+        margin-left: 10%;
+        margin-right: auto;
+      }
+
+      /* Hình thang */
+      .trapezoid {
+        width: 70px;
+        height: 0;
+        border-style: solid;
+        border-width: 0 25px 50px 25px;
+        border-color: transparent transparent #1abc9c transparent;
+        margin-left: 10%;
+        margin-right: auto;
+      }
+
+      /* Tam giác rộng */
+      .wide-triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 60px 30px 60px;
+        border-color: transparent transparent #34495e transparent;
+        margin-left: 10%;
+        margin-right: auto;
+      }
+
+      /* Tam giác nhọn */
+      .acute-triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 15px 70px 15px;
+        border-color: transparent transparent #c0392b transparent;
+        margin-left: 10%;
+        margin-right: auto;
+      }
+
+      /* Tam giác cân */
+      .isosceles-triangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 30px 45px 30px;
+        border-color: transparent transparent #d35400 transparent;
+        margin-left: 10%;
+        margin-right: auto;
+      }
+
+      /* Mũi tên phải */
+      .arrow-right {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 0 25px 40px;
+        border-color: transparent transparent transparent #16a085;
+      }
+
+      /* Mũi tên trái */
+      .arrow-left {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 40px 25px 0;
+        border-color: transparent #8e44ad transparent transparent;
+      }
+
+      /* Ribbon/Lá cờ  */
+      .ribbon {
+        width: 40px;
+        height: 0;
+        border-style: solid;
+        border-width: 20px;
+        border-color: #e74c3c transparent #e74c3c #e74c3c;
+      }
+
+      /* F8 */
+      /* F */
+      .letter-f {
+        display: inline-block;
+      }
+
+      .f-top,
+      .f-mid {
+        width: 75px;
+        height: 0;
+        border-style: solid;
+        border-width: 25px 0 0 0;
+        border-color: #d35400 transparent transparent transparent;
+      }
+
+      .f-gap-1 {
+        width: 0;
+        height: 35px;
+        border-style: solid;
+        border-width: 0 0 0 25px;
+        border-color: transparent transparent transparent #d35400;
+      }
+
+      .f-gap-2 {
+        width: 0;
+        height: 65px;
+        border-style: solid;
+        border-width: 0 0 0 25px;
+        border-color: transparent transparent transparent #d35400;
+      }
+
+      /* 8 */
+      .letter-8 {
+        display: inline-block;
+        margin-left: 20px;
+      }
+
+      .s8-top {
+        width: 25px;
+        height: 37.5px;
+        border-style: solid;
+        border-width: 25px 25px 12.5px 25px;
+        border-color: #d35400;
+      }
+
+      .s8-bot {
+        width: 25px;
+        height: 37.5px;
+        border-style: solid;
+        border-width: 12.5px 25px 25px 25px;
+        border-color: #d35400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shape-container">
+      <div class="square"></div>
+      <p>1. Hình vuông</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="rectangle"></div>
+      <p>2. Hình chữ nhật</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="triangle-up"></div>
+      <p>3. Tam giác lên</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="triangle-down"></div>
+      <p>4. Tam giác xuống</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="triangle-left"></div>
+      <p>5. Tam giác trái</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="triangle-right"></div>
+      <p>6. Tam giác phải</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="trapezoid"></div>
+      <p>7. Hình thang</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="wide-triangle"></div>
+      <p>8. Tam giác rộng</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="acute-triangle"></div>
+      <p>9. Tam giác nhọn</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="isosceles-triangle"></div>
+      <p>10. Tam giác cân</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="arrow-right"></div>
+      <p>11. Mũi tên phải</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="arrow-left"></div>
+      <p>12. Mũi tên trái</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="ribbon"></div>
+      <p>13. Ribbon/Lá cờ</p>
+    </div>
+
+    <div class="shape-container">
+      <div class="f8-container">
+        <div class="letter-f">
+          <div class="f-top"></div>
+          <div class="f-gap-1"></div>
+          <div class="f-mid"></div>
+          <div class="f-gap-2"></div>
+        </div>
+
+        <div class="letter-8">
+          <div class="s8-top"></div>
+          <div class="s8-bot"></div>
+        </div>
+        <div>14. F8</div>
+      </div>
+    </div>
+  </body>
+</html>
