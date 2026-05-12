@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | IT Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo"></div>
+      <div class="name"><h1>Trương Gia Hưng - Pegion</h1></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html"><span class="mdi mdi-home">Home</span></a>
+          </li>
+          <li>
+            <a href="../pages/about.html"
+              ><span class="mdi mdi-account">About</span></a
+            >
+          </li>
+          <li>
+            <a href="../pages/skills.html"
+              ><span class="mdi mdi-lightbulb">Skills</span></a
+            >
+          </li>
+          <li>
+            <a href="../pages/projects.html"
+              ><span class="mdi mdi-folder">Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="../pages/blog.html"
+              ><span class="mdi mdi-note-edit">Blog</span></a
+            >
+          </li>
+          <li>
+            <a href="../pages/contact.html"
+              ><span class="mdi mdi-card-account-mail">Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <!-- main -->
+    <main class="blog-layout section-container">
+      <section class="blog-header">
+        <h1>Phân biệt var, let và const</h1>
+        <p class="blog-meta">
+          Tác giả: Trương Gia Hưng | Ngày đăng:
+          <time datetime="2026-05-12">12/05/2026</time>
+        </p>
+        <img
+          src="../images/Skill-js.png"
+          alt="JS Cover"
+          width="00"
+          class="blog-cover"
+        />
+
+        <nav class="table-of-contents">
+          <strong>Mục lục:</strong>
+          <ul>
+            <li><a href="#content">1. Phạm vi hoạt động</a></li>
+            <li><a href="#code">2. Code thực tế</a></li>
+            <li><a href="#quote">3. Trích dẫn</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="blog-content" id="content">
+        <h2>1. Phạm vi hoạt động (Scope)</h2>
+        <p>
+          <strong>Khai báo biến</strong> là bước cơ bản nhất. JavaScript trước
+          đây chỉ có <code>var</code>, nhưng ES6 đã mang đến
+          <em>sự đột phá</em> bằng <code>let</code> và <code>const</code>.
+        </p>
+        <p>
+          Sự khác biệt lớn nhất là phạm vi: <code>var</code> dùng phạm vi hàm,
+          còn <code>let</code>/<code>const</code> dùng phạm vi khối (block
+          scope). Cải tiến này giúp <mark>tránh lỗi ghi đè dữ liệu</mark>.
+        </p>
+        <p>
+          Hãy thử nhấn <kbd>F12</kbd> mở Console, gõ code và xem output trả về:
+          <samp>undefined</samp> hoặc giá trị thực tế.
+        </p>
+      </section>
+
+      <section class="blog-quote" id="quote">
+        <h2>3. Trích dẫn</h2>
+        <blockquote>
+          "Bất kỳ kẻ ngốc nào cũng có thể viết code để máy tính hiểu. Lập trình
+          viên giỏi viết code để con người hiểu."
+          <br />
+          <cite>- Martin Fowler</cite>
+        </blockquote>
+      </section>
+
+      <section class="blog-code-example" id="code">
+        <h2>2. Code thực tế</h2>
+        <p>
+          Dưới đây là 2 đoạn code minh họa ngắn gọn sự khác nhau giữa biến có
+          thể thay đổi và hằng số.
+        </p>
+
+        <pre><code>
+// 1. Dùng let (Biến có thể gán lại, phạm vi khối)
+let score = 10;
+if (true) {
+    let score = 20; // Biến này chỉ sống trong ngoặc nhọn
+}
+console.log(score); // Output: 10
+        </code></pre>
+
+        <pre><code>
+// 2. Dùng const (Hằng số, không thể gán lại)
+const PI = 3.14;
+// PI = 3.15; // Sẽ gây lỗi TypeError
+        </code></pre>
+      </section>
+
+      <section class="blog-ref">
+        <h2>Tham khảo</h2>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <cite>MDN Web Docs - JS Variables</cite>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://javascript.info"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <cite>JavaScript.info - Let and Const</cite>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <hr />
+
+      <section
+        class="blog-infor"
+        style="text-align: center; padding: 20px; background: #f9f9f9"
+      >
+        <img
+          src="../images/avatar.jpg"
+          alt="Avatar"
+          width="80"
+          height="80"
+          style="border-radius: 50%"
+        />
+        <p>
+          <strong>F8 Official</strong> - Front-end Developer nhiệt huyết, thích
+          viết code sạch và chia sẻ kiến thức.
+        </p>
+        <address>
+          Email:
+          <a href="mailto:truonggiahungoxo@gmail.com"
+            >truonggiahungoxo@gmail.com</a
+          >
+          | Github:
+          <a
+            href="https://github.com/Pegion-zzz"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@Pegion-zzz</a
+          >
+        </address>
+
+        <div style="margin-top: 15px">
+          <a href="#top" class="btn btn-outline">&uarr; Lên đầu trang</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="social-links">
+        <a href="https://facebook.com" title="Facebook"
+          ><i class="fab fa-facebook fa-2x"></i
+        ></a>
+        <a href="https://instagram.com" title="Instagram"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a href="https://twitter.com" title="Twitter"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a href="https://github.com" title="Github"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+        <a href="https://linkedin.com" title="LinkedIn"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+      </div>
+
+      <p>&copy; 2026 Trương Gia Hưng. All rights reserved.</p>
+
+      <div class="back-to-top">
+        <a href="#top">Lên đầu trang &uarr;</a>
+      </div>
+    </footer>
+  </body>
+</html>

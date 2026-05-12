@@ -1,0 +1,13 @@
+/* Home-page */
+
+/* About-page */
+.quote-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.quote-container blockquote {
+  margin: 0;
+}

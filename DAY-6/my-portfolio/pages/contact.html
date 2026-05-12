@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | IT Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo"></div>
+      <div class="name"><h1>Trương Gia Hưng - Pegion</h1></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html"><span class="mdi mdi-home">Home</span></a>
+          </li>
+          <li>
+            <a href="../pages/about.html"
+              ><span class="mdi mdi-account">About</span></a
+            >
+          </li>
+          <li>
+            <a href="../pages/skills.html"
+              ><span class="mdi mdi-lightbulb">Skills</span></a
+            >
+          </li>
+          <li>
+            <a href="../pages/projects.html"
+              ><span class="mdi mdi-folder">Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="../pages/blog.html"
+              ><span class="mdi mdi-note-edit">Blog</span></a
+            >
+          </li>
+          <li>
+            <a href="../pages/contact.html"
+              ><span class="mdi mdi-card-account-mail">Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <!-- main -->
+    <main class="contact-layout section-container">
+      <div class="section-header">
+        <h2>Liên Hệ Với Tôi</h2>
+        <p>
+          Hãy để lại thông tin hoặc liên hệ trực tiếp, tôi sẽ phản hồi bạn trong
+          thời gian sớm nhất.
+        </p>
+      </div>
+
+      <!-- contact-form -->
+      <div class="contact-form-container">
+        <form action="#" method="post" class="contact-form">
+          <fieldset>
+            <p>Thông tin cơ bản</p>
+            <div class="form-group">
+              <label for="fullname">Họ và tên <span>*</span></label>
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                required
+                minlength="2"
+                placeholder="Nhập họ và tên..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span>*</span></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="example@domain.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Số điện thoại</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10,11}"
+                placeholder="0123456789"
+                title="Vui lòng nhập số điện thoại VN hợp lệ (10-11 số)"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="form-group">
+              <label for="subject">Chủ đề</label>
+              <select name="subject" id="subject">
+                <option value="">-- Chọn chủ đề --</option>
+                <option value="Hỏi về dự án">Hỏi về dự án</option>
+                <option value="Hợp tác">Hợp tác</option>
+                <option value="Tuyển dụng">Tuyển dụng</option>
+                <option value="Khác">Khác</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="form-group">
+              <label for="priority">Mức độ ưu tiên:</label>
+              <div class="radio-group">
+                <label
+                  ><input type="radio" name="priority" value="Thấp" checked />
+                  Thấp</label
+                >
+                <label
+                  ><input type="radio" name="priority" value="Trung bình" />
+                  Trung bình</label
+                >
+                <label
+                  ><input type="radio" name="priority" value="Cao" /> Cao</label
+                >
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="form-group">
+              <label for="services">Dịch vụ quan tâm:</label>
+              <div class="checkbox-group">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="services"
+                    value="Web Development"
+                  />
+                  Web Development</label
+                >
+                <label
+                  ><input type="checkbox" name="services" value="Mobile App" />
+                  Mobile App</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    name="services"
+                    value="UI/UX Design"
+                  />
+                  UI/UX Design</label
+                >
+                <label
+                  ><input type="checkbox" name="services" value="Consulting" />
+                  Consulting</label
+                >
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="form-group">
+              <label for="message"
+                >Tin nhắn <span class="required">*</span></label
+              >
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows="6"
+                minlength="10"
+                placeholder="Nhập tin nhắn của bạn..."
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="form-group">
+              <label for="rating">Đánh giá website này (1-5 sao):</label>
+              <input
+                type="range"
+                id="rating"
+                name="rating"
+                min="1"
+                max="5"
+                value="5"
+              />
+              <output>5</output> sao
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div class="form-group">
+              <label for="attachment"
+                >Đính kèm CV hoặc tài liệu (nếu có):</label
+              >
+              <input
+                type="file"
+                id="attachment"
+                name="attachment"
+                accept=".pdf,.doc,.docx"
+              />
+            </div>
+          </fieldset>
+
+          <div class="form-group terms">
+            <label>
+              <input type="checkbox" name="terms" required /> Tôi đồng ý với
+              Chính sách bảo mật <span class="required">*</span>
+            </label>
+          </div>
+
+          <div class="form-actions" style="margin: 10px">
+            <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+            <button type="reset" class="btn btn-outline">Xóa form</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- contact-info -->
+      <div class="contact-info-container">
+        <section class="contact-details">
+          <h3>Thông tin liên hệ</h3>
+          <address>
+            <p>
+              <i class="mdi mdi-email"></i> <strong>Email:</strong>
+              <a href="mailto:truonggiahungoxo@gmail.com"
+                >truonggiahungoxo@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="mdi mdi-phone"></i> <strong>Điện thoại:</strong>
+              <a href="tel:+84123456789">+84 123 456 789</a>
+            </p>
+            <p>
+              <i class="mdi mdi-map-marker"></i> <strong>Địa chỉ:</strong> Khu
+              Công nghệ cao TP.HCM, Quận 9, TP. Thủ Đức, Việt Nam.
+            </p>
+          </address>
+
+          <div class="social-links">
+            <a href="https://facebook.com" title="Facebook"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <a href="https://linkedin.com" title="LinkedIn"
+              ><i class="fab fa-linkedin fa-lg"></i
+            ></a>
+            <a href="https://github.com" title="Github"
+              ><i class="fab fa-github fa-lg"></i
+            ></a>
+          </div>
+        </section>
+        <hr />
+
+        <section class="working-hours">
+          <h3>Giờ làm việc</h3>
+          <table border="1">
+            <tbody>
+              <tr>
+                <td style="padding: 8px 0; border-bottom: 1px solid #ddd">
+                  Thứ 2 - Thứ 6
+                </td>
+                <td style="padding: 8px 0; border-bottom: 1px solid #ddd">
+                  <time>08:00 AM</time> - <time>06:00 PM</time>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 0; border-bottom: 1px solid #ddd">
+                  Thứ 7
+                </td>
+                <td style="padding: 8px 0; border-bottom: 1px solid #ddd">
+                  <time>09:00 AM</time> - <time>12:00 PM</time>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 0">Chủ nhật</td>
+                <td style="padding: 8px 0"><mark>Nghỉ</mark></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <hr />
+
+        <section class="google-maps">
+          <h3>Bản đồ</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4206639913165!2d106.8073080758416!3d10.844111389308415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752731176b07b1%3A0xb752b24b379bae5e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBGUFQgVFAuIEhDTQ!5e0!3m2!1svi!2s!4v1714800000000!5m2!1svi!2s"
+            width="100%"
+            height="450"
+            style="border: 0; border-radius: 8px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </section>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="social-links">
+        <a href="https://facebook.com" title="Facebook"
+          ><i class="fab fa-facebook fa-2x"></i
+        ></a>
+        <a href="https://instagram.com" title="Instagram"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a href="https://twitter.com" title="Twitter"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a href="https://github.com" title="Github"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+        <a href="https://linkedin.com" title="LinkedIn"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+      </div>
+
+      <p>&copy; 2026 Trương Gia Hưng. All rights reserved.</p>
+
+      <div class="back-to-top">
+        <a href="#top">Lên đầu trang &uarr;</a>
+      </div>
+    </footer>
+  </body>
+</html>
