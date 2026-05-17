@@ -1,0 +1,119 @@
+.container {
+  width: 600px;
+  height: 200px;
+  border: 2px solid red;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  color: #f0f0f0;
+  background-color: rgba(12, 53, 141, 0.795);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.container-3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .box:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  .box:nth-child(2) {
+    margin-bottom: 50px;
+  }
+}
+
+.container-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .box:nth-child(1) {
+    margin-right: 10px;
+  }
+  .box:nth-child(2) {
+    margin-right: 40px;
+  }
+}
+
+.container-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.container-6 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.container-7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .box:nth-child(1) {
+    margin-bottom: 60px;
+  }
+  .box:nth-child(2) {
+    margin-bottom: 20px;
+  }
+}
+
+.container-8 {
+  display: flex;
+  align-items: center;
+  .box:nth-child(2) {
+    margin: 0 auto;
+  }
+}
+
+.container-9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  .box:nth-child(1) {
+    align-self: flex-start;
+    margin-top: 40px;
+  }
+  .box:nth-child(3) {
+    align-self: flex-end;
+    margin-bottom: 40px;
+  }
+}
+
+.container-10 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  .box:nth-child(1) {
+    align-self: self-start;
+  }
+  .box:nth-child(3) {
+    align-self: flex-end;
+  }
+}
