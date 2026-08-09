@@ -393,7 +393,7 @@ nav > ul > li {
 h1,
 h2,
 h3 {
-} /* Áp dụng cùng style cho h1, h2, h3 */
+} /* Áp dụng cùng style cho tag h1, h2, h3 */
 ```
 
 ### 7. Box Model
